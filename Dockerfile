@@ -2,4 +2,7 @@
 FROM ruby:latest
 
 # vimのインストール
-RUN apt-get update && apt-get -y install vim
+RUN apt update && apt -y install vim
+
+# Railsのインストール
+RUN gem update && gem install rails -v 6.0.3
