@@ -1,5 +1,5 @@
 # Dockerイメージの取得
-FROM ruby:latest
+FROM ruby:slim
 
 # vimのインストール
 RUN apt update && apt -y install vim
